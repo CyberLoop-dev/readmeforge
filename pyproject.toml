@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "readmeforge"
+version = "0.1.0"
+description = "Generate a polished README and an animated SVG banner in one command."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+keywords = ["readme", "generator", "svg", "banner", "documentation"]
+
+[project.scripts]
+readmeforge = "readmeforge:main"
+
+[tool.setuptools]
+py-modules = ["readmeforge"]
